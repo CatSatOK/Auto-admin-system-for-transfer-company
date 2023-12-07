@@ -1,0 +1,71 @@
+:root {
+  --primary-color: grey;
+  --secondary-color: rgb(229, 248, 250);
+  --accent-color: #dae5e5;
+  --hover-color: #f9fafa;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: left;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem;
+}
+
+th {
+  font-weight: bold;
+  background-color: var(--accent-color);
+}
+
+tr:nth-child(even) {
+  background-color: var(--accent-color);
+}
+
+tr:hover {
+  background-color: var(--hover-color);
+}
+
+div#loading {
+  border: 8px solid var(--primary-color);
+  border-top: 8px solid var(--secondary-color);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 2s linear infinite;
+  display: none;
+  cursor: wait;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}

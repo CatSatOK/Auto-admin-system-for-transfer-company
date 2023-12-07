@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Confirm</title>
+        <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+
+    <body>
+        <br>
+        <h1>Order confirmed - client invoice sent</h1>
+        <br>
+        <a href="{{ url_for('onhold') }}" style="margin:auto; text-align:center; display:block;" class="button large hpbottom"> Check more onhold bookings </a>
+        <br>
+        <a href="{{ url_for('bookings') }}" style="margin:auto; text-align:center; display:block;" class="button large hpbottom"> See all bookings </a>
+        <br> 
+    </body>
+</html>

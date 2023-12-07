@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LoginPage</title>
+        <link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+
+    <body>
+        <br>
+        <h1>Please enter your login details</h1>
+        <br>
+        <div class="container" style="margin:auto; text-align:center; display:block;">
+            <form action="" method="post">
+                <input type="text" placeholder="Username" name="username" value="{{
+                    request.form.username }}"><br>
+                <input type="password" placeholder="Password" name="password" value="{{
+                    request.form.password }}"><br><br>
+                <input class="btn btn-default" type="submit" value="Login"><br>
+            </form>
+            {% if error %}
+                <p class="error"><strong>Error:</strong> {{ error }}
+            {% endif %}
+        </div>
+        <br> 
+    </body>
+</html>

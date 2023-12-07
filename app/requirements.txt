@@ -1,0 +1,17 @@
+bs4
+datefinder
+datetime
+flask
+gmaps
+googlemaps
+google-api-python-client
+google-auth-httplib2 
+google-auth-oauthlib
+http.client
+lxml
+mysql.connector
+pandas
+python-dotenv
+selenium
+spacy
+spacy-transformers
