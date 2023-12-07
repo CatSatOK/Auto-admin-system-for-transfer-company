@@ -1,0 +1,8 @@
+Schedule for auto_admin (every 10 min): 
+*/10 * * * * python3 scheduled_auto_admin.py 
+
+Scheudle for db_backup (everyday at 02:30):
+30 2 * * * /path/to/db_backup.sh
+
+Scheudle for website health check (everyday at 06:30):
+30 6 * * * /path/to/health_check.sh
