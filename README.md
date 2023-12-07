@@ -2,7 +2,7 @@
 General steps to the automated proces:
 - any unread emails are downloaded from Gmail
 - if they are booking requests, the custom NER model is applied to get the necesssary booking details
-- availability is checking via Google Calendar
+- the time required for the transfer i calculated using Google Maps and availability is checking via Google Calendar
 - if available the booking is added, an invoice created and the client emailed, if not available the staff are alerted to check the booking
 - onhold bookings can be accepted or rejected via the webapp
 - all bookings and their current status stored in database
