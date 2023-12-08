@@ -381,8 +381,8 @@ def calendarCheckSimple(CalID, creds, start_str, hrs, mins):
 # This function takes the shorten name for the calendar entry title
 
 def getAbbrevations(FROM, TO):
-    destinations = ['biarritz aéroport', 'saint jean pied de port', 'st jean de luz', 'san sebastian']
-    abbrevations = ['BIQ', 'SJPDP', 'SJDL', 'San Seb']
+    destinations = [list destinations here you want to abbrevate]
+    abbrevations = [list abbreviations here]
     if FROM in destinations:
         FROM = abbrevations[destinations.index(FROM)]
     if TO in destinations:
