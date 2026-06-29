@@ -9,13 +9,16 @@
     <body>
         <br>
         <h1>Please enter your login details</h1>
+        {% if demo_hint %}
+        <p style="text-align:center;">Demo login: <strong>demo</strong> / <strong>demo</strong> (pre-filled, just click Login)</p>
+        {% endif %}
         <br>
         <div class="container" style="margin:auto; text-align:center; display:block;">
             <form action="" method="post">
                 <input type="text" placeholder="Username" name="username" value="{{
-                    request.form.username }}"><br>
+                    request.form.username or demo_user }}"><br>
                 <input type="password" placeholder="Password" name="password" value="{{
-                    request.form.password }}"><br><br>
+                    request.form.password or demo_pass }}"><br><br>
                 <input class="btn btn-default" type="submit" value="Login"><br>
             </form>
             {% if error %}

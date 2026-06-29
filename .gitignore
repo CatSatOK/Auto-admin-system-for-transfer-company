@@ -1,0 +1,31 @@
+# Secrets and credentials - NEVER commit these
+.env
+*.json
+!app/static/**/*.json
+admin-auth.json
+bat-admin-auth.json
+GMaps_api.txt
+
+# spaCy NER model artifacts
+model-best*/
+model-last*/
+
+# Logs and local data
+*.log
+logfile.log
+*.sqlite
+*.db
+demo.sqlite
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
