@@ -11,7 +11,7 @@ import os
 CalID = os.getenv('CalID') #getting id email from .env file
 SCOPES = ["https://www.googleapis.com/auth/gmail.readonly", "https://www.googleapis.com/auth/gmail.send", 
           "https://www.googleapis.com/auth/gmail.modify", "https://www.googleapis.com/auth/calendar"]
-service_auth_file = "bat-admin-auth.json"
+service_auth_file = os.getenv("SERVICE_AUTH_FILE", "admin-auth.json")
 creds = service_account.Credentials.from_service_account_file(service_auth_file, scopes=SCOPES, subject=CalID)
 
 
